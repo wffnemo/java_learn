@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ExtendsTest",
+            "request": "launch",
+            "mainClass": "code.ExtendsTest",
+            "projectName": "java_code"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CombinationTest",
+            "request": "launch",
+            "mainClass": "code.CombinationTest",
+            "projectName": "java_code"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DataTypeChange",
             "request": "launch",
             "mainClass": "code.DataTypeChange",
