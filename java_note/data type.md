@@ -88,6 +88,7 @@
 byte->short->int->long->float->double
 char->int->long ->float->double
 <font color=red>当把任何基本类型的值与字符串值进行连接时，基本类型值自动类型转换为字符串类型，如果希望把基本类型值转换为字符串类型，可以将其与空字符串进行连接，注意连接的先后顺序</font>
+<font color=red>数据类型转换：DataTypeChange.java</font>
 
 * 强制类型转换
 当把箭头右边的类型转换为箭头左边的类型时，需要进行强制类型转换，强制类型转换直接截断多余的位，容易造成数据丢失。

@@ -106,6 +106,7 @@ this关键字总是指向调用该方法的对象，this作为对象的默认引
 ### 2.方法参数的传递
 
 <font color=red>Java中参数传递方式只有一种：值传递。引用类型的参数传递也是值传递</font>
+<font color=red>值传递：ValueTrans.java</font>
 
 ### 3.形参个数可变的方法
 
@@ -257,6 +258,8 @@ instanceof 运算符的前一个操作数通常是一个引用变量，后一个
 
 * <font color=green>继承实现复用：子类可以直接访问从父类继承而来的成员变量和方法</font>
 * <font color=green>组合实现复用：将旧类对象作为新类的成员变量组合起来，实现复用</font>
+
+<font color=red>继承与组合的使用：ExtendsTest.java、ConbinationTest.java</font>
 
 ## 初始化块
 
