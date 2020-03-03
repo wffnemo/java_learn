@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - InnerClassTest",
+            "request": "launch",
+            "mainClass": "code.InnerClassTest",
+            "projectName": "java_code"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Test",
             "request": "launch",
             "mainClass": "code.Test",
