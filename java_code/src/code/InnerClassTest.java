@@ -6,8 +6,8 @@ class Cow{
     private static String color;
     public Cow(){}
     public Cow(double weight,String color){
-        this.weight = weight;
-        this.color = color;
+        Cow.weight = weight;
+        Cow.color = color;
     }
     private class CowLeg{
         private double length;

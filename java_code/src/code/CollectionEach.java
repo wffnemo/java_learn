@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 public class CollectionEach {
     public static void main(String[] args) {
-        Collection books = new HashSet();
+        Collection<String> books = new HashSet<>();
         books.add("1");
         books.add("2");
         books.add("3");

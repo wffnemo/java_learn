@@ -30,13 +30,13 @@ class R{
 
 public class HashSetTest{
     public static void main(String[] args) {
-        HashSet hs = new HashSet();
+        HashSet<R> hs = new HashSet<>();
         hs.add(new R(1));
         hs.add(new R(2));
         hs.add(new R(3));
         hs.add(new R(4));
         System.out.println(hs);
-        Iterator it = hs.iterator();
+        Iterator<R> it = hs.iterator();
         R first = (R)it.next();
         first.count = 2;
         System.out.println(hs);

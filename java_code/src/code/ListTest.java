@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ListTest {
     public static void main(String[] args) {
-        List books = new ArrayList();
+        List<String> books = new ArrayList<>();
         books.add(new String("A"));
         books.add(new String("B"));
         books.add(new String("C"));

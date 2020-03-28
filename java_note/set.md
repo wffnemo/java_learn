@@ -13,7 +13,8 @@ Java集合类分为三大类：Set集合是无序集合，List集合是有序集
 ### 1.使用Lambda表达式遍历集合
 
 `Collection`接口是`Iterable`接口的子接口，继承了Iterable接口的`forEach(Consumer action)`默认方法，而forEach()遍历集合元素时，程序会依次将集合元素传给函数式接口Consumer的accept(T t)方法（该接口的唯一抽象方法），因此可以使用Lambda表达式来遍历集合元素。
-<font color=red>CollectionEach.java</font>
+
+[CollectionEach.java](../java_code/src/code/CollectionEach.java)
 
 ### 2.使用Iterator遍历集合
 
@@ -57,7 +58,7 @@ HashSet具有以下特点：
 
 <font color=#228B22>如果向HashSet中添加一个可变对象后，后面程序修改了该可变对象的实例变量，则可能导致它与集合中的其他元素相同，这就有可能导致HashSet中包含了两个相同的对象。因此向HashSet中添加对象时，必须十分小心</font>
 
-<font color=red>HashSetTest.java</font>
+[HashSetTest.java](../java_code/src/code/HashSetTest.java)
 
 ### 2.LinkedHashSet类
 
@@ -77,7 +78,7 @@ HashSet有一个子类LinkedHashSet，LinkedHashSet集合也是根据元素的ha
 
 List接口是Collection接口的子接口，可以使用Collection接口里的全部方法。同时，与Set集合相比，List增加了根据索引来插入、替换和删除集合元素的方法。
 
-<font color=red>ListTest.java</font>
+[ListTest.java](../java_code/src/code/ListTest.java)
 
 <font color=#0000EE>List判断两个对象相等只要通过`equals()`方法比较返回true即可</font>
 

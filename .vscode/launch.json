@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - GenericTest",
+            "request": "launch",
+            "mainClass": "code.GenericTest",
+            "projectName": "java_code"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ListTest",
             "request": "launch",
             "mainClass": "code.ListTest",
