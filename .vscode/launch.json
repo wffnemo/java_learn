@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - GenericTest3",
+            "request": "launch",
+            "mainClass": "code.GenericTest3",
+            "projectName": "java_code"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GenericMethodTest",
+            "request": "launch",
+            "mainClass": "code.GenericMethodTest",
+            "projectName": "java_code"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GenericTest2",
+            "request": "launch",
+            "mainClass": "code.GenericTest2",
+            "projectName": "java_code"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - GenericTest",
             "request": "launch",
             "mainClass": "code.GenericTest",
