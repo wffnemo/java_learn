@@ -293,12 +293,12 @@ Lambda表达式的使用限制：
 
 ### 2.枚举类入门
 
-枚举类使用enum关键字，一个java源文件中最多只能定义一个public枚举类，且该源文件必须与该枚举类同名
+枚举类使用`enum`关键字，一个java源文件中最多只能定义一个`public`枚举类，且该源文件必须与该枚举类同名
 
-* 枚举类可以实现一个或多个接口，枚举类默认继承java.lang.Enum类，而不是Object类，因此枚举类不能显式继承其他类。java.lang.Enum类实现了java.lang.Serializable和java.lang.Comparable两个接口
-* 枚举类要么是抽象类，要么是final类，默认使用final修饰
-* 枚举类的构造器必须使用private修饰
-* 枚举类的所有实例必须在枚举类的第一行显式列出，默认使用public static final修饰，无需显示添加
+* 枚举类可以实现一个或多个接口，枚举类默认继承`java.lang.Enum`类，而不是`Object`类，因此枚举类不能显式继承其他类。`java.lang.Enum`类实现了`java.lang.Serializable`和`java.lang.Comparable`两个接口
+* 枚举类要么是抽象类，要么是`final`类，默认使用`final`修饰
+* 枚举类的构造器必须使用`private`修饰
+* 枚举类的所有实例必须在枚举类的第一行显式列出，默认使用`public static final`修饰，无需显示添加
 
 <font color=#8FBC8F>switch语句的控制表达式可以是任何枚举类型，且后面的case表达式中的值可以直接使用枚举值的名字，无需添加枚举类作为限定</font>
 
