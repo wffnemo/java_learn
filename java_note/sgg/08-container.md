@@ -9,10 +9,10 @@
 		* `Set`接口：无序、不可重复的集合
 	* `Map`接口：双列数据，保存具有映射关系的集合
 * `Collection`接口继承树：
-<img src="D:\java_learn\java_note\sgg\Collection接口继承树.PNG" style="zoom: 50%;" />
+<img src="D:\学习笔记\java_learn\java_note\sgg\Collection接口继承树.PNG" style="zoom: 50%;" />
 
 * `Map`接口继承树：
-<img src="D:\java_learn\java_note\sgg\Map接口继承树.PNG" style="zoom:50%;" />
+<img src="D:\学习笔记\java_learn\java_note\sgg\Map接口继承树.PNG" style="zoom:50%;" />
 
 ## 二、Collection接口
 
