@@ -1,10 +1,5 @@
 # JDBC核心技术
 
-讲师：宋红康
-
-微博：尚硅谷-宋红康
-
-***
 
 ## 第1章：JDBC概述
 
@@ -329,7 +324,7 @@ driverClass=com.mysql.jdbc.Driver
 
 - 在 java.sql 包中有 3 个接口分别定义了对数据库的调用的不同方式：
   - Statement：用于执行静态 SQL 语句并返回它所生成结果的对象。 
-  - PrepatedStatement：SQL 语句被预编译并存储在此对象中，可以使用此对象多次高效地执行该语句。
+  - PreparedStatement：SQL 语句被预编译并存储在此对象中，可以使用此对象多次高效地执行该语句。
   - CallableStatement：用于执行 SQL 存储过程
 
   ![1566573842140](JDBC.assets/1566573842140.png)
@@ -350,7 +345,7 @@ driverClass=com.mysql.jdbc.Driver
   - **问题一：存在拼串操作，繁琐**
   - **问题二：存在SQL注入问题**
 
-- SQL 注入是利用某些系统没有对用户输入的数据进行充分的检查，而在用户输入数据中注入非法的 SQL 语句段或命令(如：SELECT user, password FROM user_table WHERE user='a' OR 1 = ' AND password = ' OR '1' = '1') ，从而利用系统的 SQL 引擎完成恶意行为的做法。
+- <font color=#228B22>SQL 注入是利用某些系统没有对用户输入的数据进行充分的检查，而在用户输入数据中注入非法的 SQL 语句段或命令(如：SELECT user, password FROM user_table WHERE user='a' OR 1 = ' AND password = ' OR '1' = '1') ，从而利用系统的 SQL 引擎完成恶意行为的做法。</font>
 
 - 对于 Java 而言，要防范 SQL 注入，只要用 PreparedStatement(从Statement扩展而来) 取代 Statement 就可以了。
 
@@ -488,9 +483,9 @@ public class StatementTest {
 - 代码的可读性和可维护性。
 
 - **PreparedStatement 能最大可能提高性能：**
-  - DBServer会对**预编译**语句提供性能优化。因为预编译语句有可能被重复调用，所以<u>语句在被DBServer的编译器编译后的执行代码被缓存下来，那么下次调用时只要是相同的预编译语句就不需要编译，只要将参数直接传入编译过的语句执行代码中就会得到执行。</u>
-  - 在statement语句中,即使是相同操作但因为数据内容不一样,所以整个语句本身不能匹配,没有缓存语句的意义.事实是没有数据库会对普通语句编译后的执行代码缓存。这样<u>每执行一次都要对传入的语句编译一次。</u>
-  - (语法检查，语义检查，翻译成二进制命令，缓存)
+  - <font color=#228B22>DBServer会对预编译语句提供性能优化。因为预编译语句有可能被重复调用，所以语句在被DBServer的编译器编译后的执行代码被缓存下来，那么下次调用时只要是相同的预编译语句就不需要编译，只要将参数直接传入编译过的语句执行代码中就会得到执行</font>
+  - <font color=#228B22>在statement语句中,即使是相同操作但因为数据内容不一样,所以整个语句本身不能匹配,没有缓存语句的意义.事实是没有数据库会对普通语句编译后的执行代码缓存。这样每执行一次都要对传入的语句编译一次</font>
+  - <font color=#228B22>语法检查，语义检查，翻译成二进制命令，缓存</font>
 
 - PreparedStatement 可以防止 SQL 注入 
 

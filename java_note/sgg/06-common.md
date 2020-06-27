@@ -70,6 +70,6 @@
 
 ## 六、BigInteger与BigDecimal
 
-* `java.math.BigInteger`类可以表示不可变的任意精度的整数
+* `java.math.BigInteger`类可以表示不可变的任意精度的有符号整数
 * `java.math.BigDecimal`类可以表示不可变的任意精度的有符号十进制定点数
 
